@@ -1,0 +1,15 @@
+{% extends 'reg/base_blog.html' %}
+
+{% block title %}
+    Post cards
+{% endblock %}
+
+{% block content %}
+    <а>
+        {% for card in posts %}
+        <p>
+            {{card}}
+        </p>
+    {% endfor %}
+    </а>
+{% endblock %}
