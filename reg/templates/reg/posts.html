@@ -1,0 +1,16 @@
+{% extends 'reg/base_blog.html' %}
+
+
+
+{%block title%}
+    Посты
+{%endblock  %}
+
+{% block content %}
+    {% for card in items %}
+        <div class ="alert alert-warning mt-2">
+            <h3>{{card.title}}</h3>
+            <p>{{card.post}}</p>
+        </div>>
+    {% endfor %}
+{% endblock %}
